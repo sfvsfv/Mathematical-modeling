@@ -18,7 +18,11 @@
 md全是老二，边打比赛也边在给外面出思路，一分钱没赚，每次比赛都是自己一个人打，实在太累，主要是我实在写不好论文，积极准备美赛中...
 
 个人运营社区：
+
 CSDN：https://blog.csdn.net/weixin_46211269?type=blog
+
 公众号：玩转大数据
+
 知乎：https://www.zhihu.com/people/wei-da-de-bu-ping-fan-93
+
 个人微信：hxgsrubxjogxeeag
