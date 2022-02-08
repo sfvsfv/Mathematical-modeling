@@ -1,0 +1,346 @@
+GA TOOLBOX FREQUENTLY ASKED QUESTIONS
+=====================================
+
+1. GENERAL QUESTIONS
+
+   1.1 'Where can I find information about the GA Toolbox?'
+
+   1.2 'What version(s) of MATLAB does the GA Toolbox work with?'
+
+   1.3 'Do you have a version of the GA Toolbox suitable for
+        MATLAB 5/6/7/... available?'
+
+   1.4 'Do you have a MOGA version of the GA Toolbox available?'
+
+   1.5 'How do I use the GA Toolbox to solve my particular problem?'
+
+   1.6 'How can I contact the authors of the GA Toolbox?'
+
+2. DOWNLOAD QUESTIONS
+
+   2.1 'I filled out the download form correctly, and pushed the 
+       "Download" button - but I never received the GA Toolbox by 
+       email. Why?'
+
+   2.2 'Why does your download form ask for my email address when
+        I just want a copy of the GA Toolbox?'
+
+3. INSTALLATION QUESTIONS
+
+   3.1 'How do I install the GA Toolbox?'
+
+4. RUN-TIME QUESTIONS
+
+   4.1 'Why do I get the error message(s):
+
+          "identifier" expected, "switch" found, or
+
+          Illegal use of reserved keyword "switch"
+
+   4.2 'Why do I get the error message(s):
+
+          ??? Undefined function or variable "NonLin", or
+
+          Warning: Reference to uninitialized variable "NonLin"
+
+   4.3 'Why is the function-specific help not working for the
+        GA Toolbox functions?'
+
+
+=====================================================================
+
+ANSWERS TO GA TOOLBOX FREQUENTLY ASKED QUESTIONS
+================================================
+
+1. GENERAL QUESTIONS
+====================
+
+------------------------------------------------
+
+1.1 The GA Toolbox homepage is at:
+
+    http://www.shef.ac.uk/acse/research/ecrg/gat.html
+
+------------------------------------------------
+
+1.2 'What version(s) of MATLAB does the GA Toolbox work with?'
+
+The GA Toolbox was written for MATLAB v4.2. It is usable with all
+subsequent releases of MATLAB, but there are some minor syntax
+issues that have to be fixed by hand when using the Toolbox with
+MATLAB v5.3 and above.
+
+See Section 4 of this FAQ.
+
+------------------------------------------------
+
+1.3 'Do you have a version of the GA Toolbox suitable for
+     MATLAB 5/6/7/... available?'
+
+The GA Toolbox was originally written for MATLAB v4.2, and it
+is this version of the Toolbox which we make available for download. 
+
+This version of the Toolbox can be (and has been) successfully 
+used with any later release of MATLAB, but, depending on the actual
+release of MATLAB being used, some minor syntax fixes may need to be
+applied to the Toolbox M files by hand.
+
+See Question 1.2 and Section 4 of this FAQ.
+
+In the future, we *may* make available versions of the GA Toolbox
+which have the relevant corrections applied for the various
+releases of MATLAB, but these are not yet available.
+
+------------------------------------------------
+
+1.4 'Do you have a MOGA version of the GA Toolbox available?'
+
+No. 
+
+But, in the future, we *may* make such a version of the 
+GA Toolbox available.
+
+------------------------------------------------
+
+1.5 'How do I use the GA Toolbox to solve my particular problem?'
+
+Whilst we happily make the GA Toolbox available for free download 
+and are always interested to hear of your experiences in using it, 
+we do *not* have the resources to offer a general GA consulting service.
+
+So we will not reply to email sent to us asking for advice in using 
+the toolbox to solve particular problems.
+
+We encourage all users of the GA Toolbox to read carefully the 
+accompanying documentation and tutorial examples. For general
+'how do I ... ?' questions, we suggest you post a question
+to the relevant Usenet group comp.ai.genetic.
+
+------------------------------------------------
+
+1.6 'How can I contact the authors of the GA Toolbox?'
+
+The authors of the GA Toolbox can be contacted by sending email
+to ga-toolbox@acse.sheffield.ac.uk.
+
+We encourage you to send us email about errors you encounter when
+using the GA Toolbox, as well as requests for enhancement to the
+toolbox, and general comments about your experiences with it.
+
+Please read this FAQ carefully before sending any such email, and
+please in particular note Question 1.5 of this FAQ.
+
+================================================
+
+2. DOWNLOAD QUESTIONS
+=====================
+
+------------------------------------------------
+
+2.1 'I filled out the download form correctly, and pushed the 
+     "Download" button - but I never received the GA Toolbox by 
+     email. Why?'
+
+The GA Toolbox download mechanism works by programatically emailing
+a copy of the toolbox to the email address supplied in the
+download form. The Toolbox is sent as a MIME attachment in ZIP'ed
+format.
+
+If, having filled in the download form using your correct email 
+address, you do not receive a copy of the Toolbox by email, then it
+is almost certainly the case that *your* email system is
+explicitly blocking incoming email which contains ZIP file attachments.
+(Some mail administrators like to do this in an attempt to stop 
+certain types of email viruses and worms.)
+
+If this is the case, you should ask your mail administrator for advice
+on your local email policy.
+
+A workaround is to setup a 'hotmail'-style address and use that
+for the GA Toolbox download.
+
+------------------------------------------------
+
+2.2 'Why does your download form ask for my email address when
+     I just want a copy of the GA Toolbox?'
+
+The GA Toolbox download mechanism works by programatically emailing
+a copy of the toolbox to the email address supplied in the
+download form.
+
+We guarantee that we will not use your email address (or any of the
+other information you supply on the download form) for any other
+purpose other than to create statistics - purely for internal use - 
+about download and usage patterns for the GA Toolbox. None of
+the information you supply will be divulged to any third party.
+
+================================================
+
+3. INSTALLATION QUESTIONS
+=========================
+
+------------------------------------------------
+
+3.1 'How do I install the GA Toolbox?'
+
+We advise you to ignore any purported high-level installation
+help from MATLAB itself and, instead, to install the toolbox by hand.
+If you have a completely local copy of MATLAB on a PC, then this
+shouldn't be a problem; if you're using a networked version of MATLAB,
+then you may have to get the system administrator to do this process on
+the server - alternatively, you can use the toolbox files locally from
+your own filestore. 
+
+The details go something like this:
+
+3.1.1 If you have a completely local copy of MATLAB on your PC:
+
+   a. Unzip the GA Toolbox somewhere in your own filestore: it will
+      unzip to two folders 'src' and 'doc'.
+
+   b. Rename the 'src' folder to 'genetic' and move it into your
+      C:\Matlab_nn\toolbox folder
+
+      (The 'nn' here is whatever your MATLAB version number is.)
+
+   c. Go to your C:\Matlab_nn\toolbox\local directory and locate the
+      file 'pathdef.m'. Take a copy of the file for a backup, then
+      open the file with a text editor. You will see that it
+      specifies the paths to all the toolboxes you have. To add the
+      GA toolbox to the path, add the two lines:
+
+        matlabroot,'\toolbox\genetic;',...
+        matlabroot,'\toolbox\genetic\test_fns;',...
+
+      in a suitable place.
+
+   d. That's it: if you restart MATLAB should have access to the 
+      GA toolbox.;
+
+3.1.2 If you are using a networked copy of MATLAB, then either:
+
+   A. The system administrator should do the same as the above 
+       for the system installation of MATLAB,
+
+   - or -
+
+   B. You use the toolbox locally, in this way:
+
+   a. Unzip the GA Toolbox somewhere in your own filestore: it will
+      unzip to two folders 'src' and 'doc'.
+
+   b. Rename the 'src' folder to 'genetic'. You might also want to 
+      move it somewhere else. Let's say it ends up in
+      d:\work\matlab\toolboxes\genetic.
+
+   c. Add the two lines 
+
+        path(path, 'd:\work\matlab\toolboxes\genetic');
+        path(path, 'd:\work\matlab\toolboxes\genetic\test_fns');
+
+      to the file 'startup.m' in your working directory. Your working
+      dir is going to be something like 'c:\matlab-nn\work' for a
+      modern PC installation of MATLAB; you might have to create the
+      file 'startup.m' there if it doesn't already exist.
+
+  d. Again, that's it. When you restart MATLAB you should then
+     see the GA toolbox.
+
+Note that the process described in 3.1.2.B above is the same thing
+you'd do to use your own M scripts: at this level, there is nothing
+significant about the fact that the GA scripts are a 'toolbox' -  
+they are just a collection of M scripts, and the only issue is getting
+their location mapped into the MATLAB path search path. To find out 
+more about the MATLAB search path and related matters then, for a 
+start, type 'help path' at the MATLAB prompt.
+
+================================================
+
+4. RUN-TIME QUESTIONS
+=====================
+
+------------------------------------------------
+
+4.1 'Why do I get the error message(s):
+
+       "identifier" expected, "switch" found, or
+
+       Illegal use of reserved keyword "switch"
+
+This error message may be encountered when using the 'objfun1' 
+function, for example, and reflects one of the syntactical 
+differences between MATLAB 6 and previous releases of MATLAB. The
+actual error message you see may depend on the actual release
+of MATLAB you are using.
+
+The GA toolbox was developed for MATLAB v4.2, and should also 
+work unchanged for MATLAB releases up to including v5.2. 
+For later releases of MATLAB, some minor syntax fixes may
+have to be applied to the M files of the toolbox by hand. These
+fixes should generally be obvious to an experienced
+user of MATLAB.
+
+In this case, the problem is that, in MATLAB v6, 'switch' is a 
+reserved word: in previous versions of MATLAB it was not. 
+To fix the problem, edit the relevant M file to change all 
+reference to 'switch' to something else like (eg 'myswitch') 
+instead.
+
+------------------------------------------------
+ 
+4.2 'Why do I get the error message(s):
+
+       ??? Undefined function or variable "NonLin", or
+
+       Warning: Reference to uninitialized variable "NonLin"
+
+The actual error message you see may depend on the actual 
+release of MATLAB you are using.
+
+The GA toolbox was developed for MATLAB v4.2, and should also 
+work unchanged for MATLAB releases up to including v5.2. 
+For later releases of MATLAB, some minor syntax fixes may
+have to be applied to the M files of the toolbox by hand. These
+fixes should generally be obvious to an experienced
+user of MATLAB.
+
+In this case, the problem is that the behaviour of MATLAB
+with respect to uninitialized variables differs between MATLAB 
+releases.
+
+Please see The Mathworks Technical Solution note on this issue,
+namely:
+
+  http://www.mathworks.com/support/solutions/data/1-18GTU.html
+
+and then apply a suitable correction to the relevant M file(s)
+of the GA Toolbox.
+
+------------------------------------------------
+
+4.3 'Why is the function-specific help not working for the
+     GA Toolbox functions?'
+
+We have had unconfirmed reports that, when used with certain
+releases of MATLAB, function-specific help for the GA Toolbox 
+(eg 'help mutate') does not work as expected.
+
+For MATLAB M files, function-specific help information is
+encoded in comments within the M files themselves. It may
+be that the detail of the allowable layouts of these comments
+differs between some of the releases of MATLAB. If you find
+that function-specific help is *not* working for you, please
+check the documentation for your release of MATLAB, and compare
+the detailed requirements for the 'help' comments with the format 
+used in the M files of the GA Toolbox.
+
+In addition, if you *do* have this problem, please email 
+ga-toolbox@acse.sheffield.ac.uk with the details of your version
+of MATLAB so that we can update this FAQ.
+
+The workaround for function-specific help for GA Toolbox
+functions not working from the MATLAB command line is simply 
+to read the help information contained within the relevant
+M files using any text editor.
+
+================================================

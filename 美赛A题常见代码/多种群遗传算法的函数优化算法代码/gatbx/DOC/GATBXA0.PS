@@ -1,0 +1,1784 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 595.3 841.9 0 1 9 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 1 /Symbol FMFONTDEFINE
+2 0 /Times-Italic FMFONTDEFINE
+3 0 /Times-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 .1 FMFILL
+2 .3 FMFILL
+3 .5 FMFILL
+4 .7 FMFILL
+5 .9 FMFILL
+6 .97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 .9 FMFILL
+18 .7 FMFILL
+19 .5 FMFILL
+20 .3 FMFILL
+21 .1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: A4
+%%EndPaperSize
+595.3 841.9 0 FMBEGINPAGE
+63.65 96.95 531.65 744.95 C
+63.65 96.95 531.65 744.95 R
+7 X
+0 K
+V
+354.2 96.95 531.65 255.98 R
+V
+0 12 Q
+0 X
+(Andrew Chipper\336eld) 354.2 247.98 T
+(Peter Fleming) 354.2 233.98 T
+(Hartmut Pohlheim) 354.2 219.98 T
+354.2 191.98 531.65 201.98 C
+354.2 200.98 822.2 200.98 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+63.65 96.95 531.65 744.95 C
+0 12 Q
+0 X
+0 K
+(Carlos Fonseca) 354.2 205.98 T
+354.2 96.95 531.65 255.98 C
+363.02 100.07 522.83 191.98 C
+0 X
+0 K
+%%BeginBinary:  23019    
+922 589 138.29 88.35 0 373.78 101.85 BEGINBITMAPBWc
+J"
+P7C0
+
+
+
+
+
+
+
+
+
+J%
+O+FC00003FJ#8"
+O*FE0000J":"
+O*E00FJ#:"
+O)FE0000J"<"
+O)F81FJ"<"
+O)C007J"<"
+O)0000J":"9"
+O(FC203FJ"8%8"
+O(F00FFFFFE00FJ%8"8"
+O(800001FFFF03J%:$
+O'FE00001FF00000J"8":"8"
+O'F8FFFF7FJ$<$
+O'F00007C0001FJ$<$
+O'C0003FF8000FJ$<$
+O'80007FFC0007J%<$
+O&FE0001FFFF8003J$>#
+O&F8000FE001J$>#
+O&E0003FF000J$>"
+O&C0007FFCJ$>$
+O&8001FFFE007FJ$?"
+O%FE0007FFJ$@#
+O%FC001F803FJ$
+O%F0003FJ$9"<#
+O%E000FFEFC01FJ#:"<"
+O%C001CFE0J#A#
+O%0003F00FJ$:"
+O$FE000F8FJ$A#
+O$FC001FF807J$:"
+O$F0007F0FJ$9"="
+O$E001FFFEFCJ#:">"
+O$C003FC03J#
+O$0007J":"="
+O%0FF8FEJ$:"
+O#FE001FF0J$C"
+O#FC007F01J$:"
+O#F000FFE0J#C"
+O#E001FFJ#;#
+O#C003C007J#;"
+O#800F80J#
+O#001FJ$;"
+O"FE003F00J$:"J"
+O"FC007FFEO+E1J$J%J"
+O"F800FF:F800003F@C0J#;"J"8"J"
+O"F001FC5FE0F@80J#="I%J"
+O"E00303FF07FF03@3FJ#;"J"B"B";"
+O"C007F8881F9E7FEJ#;"J"B"B"<"
+O"800FF08E0E18F7FJ#<#J";"
+O"001F0401O"0FFCJ$;#="E#
+O!FE003FE00EFEF07FJ$J"B"
+O!FC007F>F8E3J$;$="E"
+O!F800FFC01E00033FJ#<#J,8+;"
+O!F001801F9F81FFFBE07FFF81FFFEF0FFBC1FC1FFFF87FFFBC3FC3J#=$;"G+8,:#8"
+O!E0033F007FFCE007F83801FFE007FE0EDF8300F807FFE00FF83007FE003FJ#<$J5
+O!C007007F806BFC3FC7C3F03000FF8603F80C0F800E02006003FF8F87E02003FE003FFFFC783FF001J#?"<"F59%
+O!800F3F0788FE1FE27E07F9F83FF080E000F80F80783FF1FC3E80F83F8F8FE1FE0J#;$="G"8#85
+O!001FFE00FFF81F0FF09E3FF03CFE3FFC1FC0FC1FE3FE1FC1FC1FF0FFFFFF1FF0FFC7FJ$>#I"8)8#8%:#:"
+O FE003FC01F0F3E1FF0FE1FF83FBF07DFC3FC1FE13FE1E3J$;#8";#B"9"8)9%A"
+O FC007FFC010FF00F073F3FFC3FFFE1FF0FFFFE3FE1FC87J$<$J">"
+O F800FF03FFE0J7FC3J#<"8#;#D%:#@"@"
+O F001F8F007E01FF83C0180FC013F83J#="8";"F$:#@#
+O E0030703C07C0000E0610001J#<"8#J#:#@#?"
+O C007F0F80173FFF83E13FFFC3J"<&;#D"="A"
+O!0FE00FFFFC00803FF00F7FJ#A":#E#:#A"@"
+O 801F7F007FFC1F7F1F3FC7J#<'9"D$
+O 003FC01FFFFE003FFE0FFFE0J$=&9"D%:#9"G$
+MFE007F3FFFFF000FFC07FFC1FEF8FE8FC1FF87J"9#9$D$<"9";#>$
+O(808007F800FF83FE0FC1E1FE1FE1FF8FJ$<#8#9#D.8";#:"8$
+MF801FF007FC000C001FE0FFF07F9FE0FE3FF0F01FF0FDF0FF907E0FF1FJ"8$8#B5:)
+O)FFE0007F00039FE00003FFF80E1FE000FFF0061FF07FFE01FC3FC1FE1FF01E3807FFFF07E1FF83FJ#<":(B"8%85
+MF003FEF0000FFFF80007FC7FFFC003<1FFF80E07800FFF03E006003E01F8007E007E03F80FFFFF83C7FC007J$8#A(BP.P(8$
+HC0003FE007FC00007F00000FF01FFE307FFFE3FFFFFFFFF87FE01FEFF7E7BFC1FE01FFJ)<#9"8"8"G(:#;R8P
+GE00000007FFFC00FFC01FE003FFFFFFE3FFFFFFFFFFFJ#9"D";"
+FFE000FFF7FJ":%<#:"9#
+FE0007F801FF803C001FFJ";$=":"9"
+F000F003F07F003J"<$<";"9"
+EF803007FF0FC0FJ"<"D"9"
+EE000FF7FJ">"<#;%
+E00FFE00FE00003FFJ"9$8"=#;$
+DFC3FFFC001C01FFFC3FFJ"8%H"
+DF00FFFFFFFFFJ"8"9%<#J#
+DC0FFF000007F803F=F80FJ$:"8"J#
+D000007FE3FEF003J"8":%<#J#
+CFE3FFFC0001F007F=FFFFJ%;$
+CF80001FFF80007J$<$;$
+CE0000FFF0003FE00FFJ$>"
+C80003F01J$=#;#
+C0000FFE000FC01J$>$
+BFE0001F8007FJ$>$:#
+BF8000FFE003FF803J$>"="
+BF0003FFF07J$?#:"
+BC000FF801FF0J#@#;"
+B8003C00F0FJ$@";"
+AFE0007E0E0J$@#:#
+AFC001FF007C01FJ$9"
+AF8003FFBJ$9"<#:#
+AE000FFF3F803803FJ#
+AC001J#:"<#:#
+A8003E3FC01007FJ#:"
+A0007C3J$A":$
+@FE001FFEFE00FFJ$:"=":"
+@F8003F830001J$:"<":"
+@F000FF03FFFCJ#H"
+@E00103J#:"B"
+@8003FEF8J#C#9"
+@000F807F07J$:"B"
+?FE001FFCF0J$:"B#
+?FC003FF8E00FJ$:"
+?F800FFF0J#<"A#
+?E00101C01FJ#;">":"
+?C003E0C03FJ#;"B"
+?8007C080J#
+?000FJ$;"B#
+>FE001F80007FJ$I"
+>FC003FFFJ$;"A"
+>F8007F00FEJ$:$A"
+>F001FFFE000001J#E"8"J#
+>E00380FC=E07FJ#;#B"?"G$D"C$
+>C007FC01031FF80003C7FC0003J#="@"C)`*:$9"8"b"8%
+>800F80F8F800001FFFF000043FFFC000007FFFC000FE0003C3E007C000001FJ#;%@">#G"8"9"?"C"8"
+>001FF803807F07FE0F000F7F830003J$;#A"C":$<(;$A":&
+=FE003FF007F0FCF8000CFC01FF8003FFF8FC001F01FC007F8000J$I">"9)<*;"9"=+
+=FC007F0FFCFFF007FFFFFFC1FCF00FFFF801FFFF003FFF8103F801FFFFF00FFFF801J$;%<%@":"91:#:"8)8%
+=F800FFE00FC03F00FFFFE0070FC3FC3FFF00FFFC3FE03FFFFE007FFF80F80101E1FFF00FFFE3FC03C03FFFFFJ"J"J&:"B"?#8"
+>0141F97FC07FFFFF1FE3807F81J#<%?"?#@";#8#<":#:"=#8"
+=F003C01FE01FC0F8037F80FF801FF0FE00F800FFE1J#<">#9"I":$9#8"J#
+=C00780FE013FFEFE7F01E00F0F5FE03J#=$?"?"F#A":$@#9"
+=800F3FF00F80F07E03E0FC007FFC07F3J#<%;":"?"E#9#8"J#
+=001F007FF007FC7F017C07F007075F80FJ$>"="8"J%@#@"
+<FE003FF80300?F803FF88403FF0J";&;":">#E#A":">"9#
+>7FFE00FFF803F8FFE100780FC2F8F3E01FJ$;"8#I"@#9#:&9";%:"9#
+<FC00FFFCFC01E3FFFFFFF8FC01FF8C0382601FFFFFFFC03FJ">"8";&?#E#A":#
+<F80100F007FFFE01C380F01F86F0E0J#<':#D"D":&?"A#9"
+<F001F803FFFE007FE00F7FE0FE00FF8E01F0807FFFJ#?$:"8#?#F"A":$
+<E003FF003FC0FC0387C03F8EE1F00FJ#<#9":#D"J#9"G"
+<C007F0071F801F3F68F000E00J"@#:"8#?"F":"=":$A"
+=0F800F00F8070FC0FF1EE3F807FFJ#<#8#9$C#J';"
+<801FE00FC007FE003FE01F57F8F807FFFFEC3J#A"9'?"J";#?"
+<003F01FC007FFFF00F1F=3EFC03FEJ$<#8$8$C"J$;"
+;FE007FC01FF0007FF000FFF093FFFFC87J$<#:"8#8#>"8"D#="9";"A"
+;FC00FF803F1FC001E01FFE0F807FC07EFE01J"8"D"J$;$
+J03003F:1FFFF88FFE01J#=#8(8#>%J"8">"
+;F801007FE000003FF00007C03FFC3FF807480E00FJ#D%C"J%:$
+;F0030000000F7F:0FFFF0FE1FFF00J#<$8";"8#>%J"="
+;E007FE00FFC01F807FF87FFC037F0FEJ"=":":"C"G">$;%
+<0F01307FFF3F07FFE13FFF807FJ#<":#9#8#>%J"="
+;C01FFC803C01FF00FFF0FFFE017F8FCJ"=#:#8"8"J%;%
+;80F8037F800FFEEFC03FFC37FFFC03FJ#A$8"C%J"
+;003F007FF07FE1FFFF00?F8J"<#:&8#J$H"
+<7FF007FFFE0003FFFC01E01FF8700J$<"<$G"J$@#
+:FE00FFE0FFFFFF805FF8FFEE01FJ"?"8#=#?&C#:"9$:%
+:FC0FFE01F803C00000007FC01F0000FF0FF0000000J#=#J"A"
+:F801C01FO#FF0FJ"A">#?"9"I":";"B$
+;03FCF007803F017EE0FF007FJ">#9"H%J$:&
+:F0803F0387FFFFC08807E1FE1FFFFF807J#J#?"8#C#?";"D"
+:E0074E00F0FE01FE00F3CC33FJ#8#J#9$="@"
+C007FF807IFE03C03C3FFC80J#J#>"J";"9"
+:C00F4C01FFE=388303J#>"8#H"8%:"<#9#9$:"C#
+:801FFFF00F1FF00FFFF8C7F007FC07E0187F87C01FJ"<#B#J"<#:":";"8#@"
+;3FFE01803F487F8030F0007FE010FJ"B#G#8#8"J$:"C#
+:00E01FFC3FF807074F000FF0FE007J"<#B#J#9#C"@#
+;7FFC03007F;FC01F81FFFF003J$<":#G"9"9"9"="9#9#:":"@"
+9FE00FFF8C03FF8FC030F00F03FF801FE0001J"?"A$?"9$A$9"@"C#
+9FC07FE00FF7F03FFFCFE007F7F1FF800J"=":"H"="8#<$8#9#:":#>$8"
+:01F080F001FE1FFF003FE0FFFC03FC807FFC007FFCJ#>":"<#C&8">#8"J$8"
+9F8030F7FFC01FE01FFFE00F8801FC19FE001FF8J"J#=%=#8";":#:$<$8"
+BE07E0FF3FFFF03FC00F0307F83F3FFFF0FF0007E1J#>"9#="D)=&8$;":#8"<#8"
+9F0071F00FF0300FFFF0007FF807FE003FFFE0707FFFEF0C01F07C00003J"B"@#8)9$8+8&9&8#8%
+BC0F8C07FFC007FFF80000000FE007FF8007FF01FFFFE01FFFFF8007FE00F000FFFE003F801E00007C0J#>"8">#>$8&8#8$85
+9E00F3FFEF007F80003800007FFC001FF800001DFC0000007FFFC0001FFF0FFF80000200007FFFE00000F800000FFE000007FFF80000000FJ#=":"I"<"8">"8#9"J"9"
+9C01F800101F003FF01FF0F6FF3FJ"8"?"G"8"9$9$8,8'8$8%
+C7FFC0FFC0F87FFE1E00007CFFFBFFF9FFF9FFFF23FF8E1FFF1F87FFF1FFF87C00001FFJ#=#9"="?$8P$9$9$8Z8$
+9803F00FF03E0FFFFFFC000FFFFFFFFFF00FF8FE003FJ"?"H#A"J$
+FF81FFFFFFF=FFFFFFJ#<"C"
+9007FFEC0J"=":">"
+:FF01073FJ">":">"
+8FEFCF080J">":">"
+901030F7FJ">":">"
+8FCF8E000J#=#:">"
+8F803F0071FFFJ"="
+FC0FEJ#=#:"="
+8F007E00F3F01J"J"
+90F4FCJ">#9">"9#
+8E0C01F80030003J"C"<"9%
+91F7FF800000003J">#9">$9#
+8C0803F0007FFF0001FJ#>":"<%:"
+8803F7FFFF007FC0000J"="9">$<"
+97F00FEE00FF03FJ"9">#<"
+BFF011F8007J#<":">$<"
+800FFFEFCC01C0000J">#:">"9#9"
+7FEFC010330FFFC3FJ">#8%8"
+EF880003FFFFFF00FJ#>":"@#8"8"
+7FC01030703FFFF03J":">"8":$
+@F8F0003FF80000J#=#:"?#:"8"
+7F803F0070F01FFFF7FJ"8"<$
+MFE0FC0003FJ#=#9"@"<$
+7F007E00FE07FF0001FJ"<%<$
+F1FFC0001FFFE000FJ#=#9"=$=$
+7E00FC01FC0F80007FF8007J"C"<$>#J#J"
+81F3FF0001FC0034F07F97FJ">#9"=$>#C$9$8#9%9'9%
+7C0803F80C0007FF001E00000F00000C3F9F0FFC207F0307FFF807FFE00003FJ"C"<$>#C"8"8"8%:#`&9"8'
+83F7F8001FFF800000FC03FFFC00000023000000003F007FFF800001FJ">#A#?"C"9"8"8"9"D"9"8"
+780007F0003FCFC03000F7F00C001J"<$?$A%8*8$;":"8*
+E00FC000FFE007FF003FFC0FC01FFE003FFFE003FFF807E3F7F007FF8007FFFC001FFJ#<$:";$?"C%8*95
+7007FFE00FFFFF8003FFFC01FFFF8F00FFFFC00FFFF001F7E0FE0FFF007FFC3FC03FFE003FFFFE03FFFF003FFFF007J"=$@#A%8):(9'8&
+DFEF0007F803F807FFFFFE03FFFFF007FFF80E1FE3FFF807FFEFFC01FFFF807C00FFFF80FJ$<#:"<$9"I#8%8#8">"8"8&8#
+6FE00FFFC0101C001FFDF01FF83FFC07F803F0FFFE0E00FFFF01FE007J"B"=#:"<#@#9%8#8"?":"8#8#
+701FC80039FC01FFE03C3FF81FFC01F07FFF0E03FF803J">#A#A"A#9$9#8";"?%
+6FCF8030007E0FC07E7FF01E00F037F07FFC07FJ";$:"="@#:#:">">"9"8#
+E03FE001F1F0FF80FFE03073FF8FFFC01J#=#9"<$A"A#:#9"8#G"9#
+6F803F007F8F8007FF0F01FFC07F0840180FE00J";$9"I#;"9&D"8"9$
+E07F000FFFEE03F0FF803FF8600FC01FF007FJ"=#9"<#B#@";":":":"@#
+707E00FF0E001F807C0F8FC7F7FFE03J"D";#:"J":#:$;#:"A#
+6F00FC003FC47FF01F01FF87FFFFFF803FJ"=#@#:"I":";"9#E"
+70FC01F0007F880FFFE803FFCJ"C";$B#F";"8#F":#
+6E0E0FE001FFC03E000C01F07C01FJ"=#:":$:"I#;">"
+71F803F1FFC003FF000FF3F0FJ"C";$:"J"9#C$
+6C0C0F8007FE0>FFE007F80FF8J"=#:":$J"<$J#
+73F007F3FF000FF>C07F87F06E00FJ"I#;"H#D#C%
+680E001C0FE01F803F01FF80FJ"<$9";#C"J#D#
+77FFE00FF80C007FE:FC013FF0J"D":#;"J#C#
+6007F000F80BFE00E07FJ"<#:"<";#="F";":"B"
+7FFFC01001F000F0180807F80J"E"9$J"E"D#<"
+5FEFFFC003F8FCFF01FFF0J"=#?$:"J#A#
+601F803F8007FFED803FF807J"?"9#:$:"J#@$
+5FC07FE01F001FFFCDC01F38003FJ"="@#J#A#
+603F0E003JE00F01FFJ"?"9";#;$="J"@#
+5F80FFCC007F8000703;073C00J";":#;"J#@"
+>E003000FF0DF0033EJ#>"9":$<"J#@$
+5F0071FF8FE001F04CF8013F007FJ";"9$;$<"J#A#8"
+>C007FC003FE00C03FC;FC00803F07J#>">$;"I"<"?"B#
+5E00F3FF8007FC0FEC0FEC01FJ":":$<"J"8$A">"
+>80F0F000FF1E@FFFF007F0F1FJ">":":"<$H"<":";"@">"
+61F7F0F01803E01001F003FE0E0J">"?#E"J#@#
+5C000E003F8<801FF007J">"9#9#<$="J":#@&;"
+63FFFE01F800F007F0007601C00FF803FFF8033FJ"H#;"J$:#?"B"
+580001FFE4FF007FE00FE001J"<#:";"=$;"J#@#
+67FFE01C03FFF007FF0<F007FC00J"D"8$;&<"J#;"@"8#:#
+5003FFE007FFC01FF803F0F5FE0303FEFC01C07FJ"<#>$J#:#?#@$
+6FFFC03FC00FF;803FF007F801FF007FJ#8"=&;"J#:#C#:#:"
+C807FF8F803FFC01FE06FC07FC00FE0080FFFCJ">"?#@";#@#:#:":"B#<";"
+4FEF8F0010FC01FC01FF8030FFE803F81F8J">":"9#<&G#;"9";$@&9"
+5010700E007F007FFE007E00F01F8FF0061C01FFF007F01J">#;"8#<&;#A":";";#@&9"
+4FCF00FFFC00FE00FFFF003803F07FC1F8021E00FFF803F03J"G#F"A#:#9#<"A"8"8#
+503801F00F003FE00F03F01071FFE07J">#?"<&:$@#<"8#;"A"8#8#;"
+4F8E01F3FC01FFFF800FE007FF8017FE07FC0F0C00FFC0FF0J"B#9#?$9$@$8%8#;"A&8#
+507FE01007FFC007FFC00FFFC007FF9FF003FC0FFE0F803FFE007F81FJ">#=$<'9"B$8%8"<";";&8#
+4F0C03FFE00FF803FFFFE003FF8FE001FE1FFC01F81F07FFC01FFF003F03FJ"B#8"?"9"9#A$8%8"E)8#;"
+50FFC03FC7F0FF001FF000703FFE00703C01FFFFE00FFF801E07FE1J">#=#="8$9#B,8"9":">.
+4E0807FF80100FF8007C00380007FF007FFF001FFFC0F03F8007FFE007FFF81FFFFF007FFFC01J$9"9#B%8*8"918%
+O FE00FF018007E0000000F8003FF01FFFF8007FFCF8000FFFFE0003FFFF001FFF000FFC03E0000000J"=#9#8#A'C"9,8"918"
+51F00FFF807F003E0007FFFFE00F81FFFFE0000007FFFC0000FFE800000FFE000003FFF800FFFC000000F80J"G#<#9(B"9(<"E"8"
+4C0E007FC01F0000FFFE0001FFEFFFFFFC00001FFFFF07FJ"<"<"8#A"`"B%9$8$9"8W%8P
+53FFE0FC00FF83FFFE00007F8000FFFFFFFC1FE0001FFJ">":"A#9";"C$9$>"D$
+48001F0F803FC7FFFE1FFFFFFFFFFFFFEFFJ"<"?#="9";"D"J"
+57FFC801F07FFFFFF?FFJ">":#8#<";"9"
+40003E01F003FF0C003J"@"<#:"9"
+<F87FE00FE007J"=";$D"9"
+5FF073FFFFEF81FJ";"8$<#:&
+<F0C0FC00FFC01FFF800001FFI#>">"D$
+FE010F01F0001FJ";&=#;$
+<E0807FFFF803803FFFFFFFI#>"="
+FC031FF0J"<"8"=#
+<C0FF07007FI#=#:"8#<$
+F807803F00C00FFE00FFJ"
+F1FI">#9"9"=#
+F0007FFE80FC01J">":"8#
+40FFF01003FI"=";":"<#
+E0FEFC7FF803J"C$
+41F03FFFEJ#:":"<#
+;FC01F8FFF007I#C%>"
+C03F07FFFC010FJ#=">"
+;F803F8E0I#B"9">"
+807FF0031FJ#;%="
+;F0070FFFF007C0J"B"
+AE03FI#<#;%="
+00FFE00F1FFFE00F80J">#
+DC0007FH">#:"9"
+FEC01FC01FI"D%>"
+013FFF803FFFJ#:"@"J#
+;803F80FE9FE7FH"?";%="J";"@"J"
+FC7F7FFF007F018F0E0037FCI"=";"@"J":'9(9#8$@#
+030000FC900FC0003FFE03F80FFE0000FF89FE047DBEFFB0003H"E%="J";&<%e$:(
+F8FFFE00FF037F8F00000FE00C00003F838000FE0003FFC00007FI"<$9"8#=#J"8$9'B"="8"
+07FE00FFFEFC01F807=C01E001F01FE0000007807E007H">";"J#:$8"8&=":#;'
+F00101CFF8080FF800FFE03FC07FE7C7F80C001FFC07FC0I"<";"8#="J":'94;&
+0FFCFCF803F09C007FFF01FC00707F81FFF80781FEE01FF907F00FFFF807FF0030FFF81FFF8J";"A"J'9*8":"=(
+;03030F<FE0FFFF81FF0FC0FF03FFFE07C7FFEFCFC801FFF07FFFC0FH"=";"8#="J(9'<";"<%
+E0F8F8F007E0=FC1FFFFC1FF8031FE07FFFF0FC8001FE0FFFFFI"<#="?"J(8'H$
+1FF007E01F<F83FFFFE1FFC01F81FC0FFFFF8001FFCH"C#8"=#J":":#:"I"8"
+C0F0070FC03F<F0FE3F81FF1F8FI"<#=#J":"8$8#G"9"8"
+3FE00FC01FAE07F3FFF00F07F00FEF8J#@"J"9"?"J"
+@E00F809C0E0FF93FH"=#=#>"J'F#8"8"
+80C01F803F7FB807FFFE0FF83807FFCF0I"B#@#J";$C#<"
+7FC01F00FF?FFC1FF03FFFF20H"=#;%J':#:#<#8"
+00803F3FFF007FIFFFFC03FFFC3FFFFFFFFC03FF8I"B"9"<"J">"J";"
+FF80FFFE>C083760FFJ#:#@"J%H#8"
+:007F007F01CE01FFF07E01FF0G"?"<">"J"8"J$
+FEFFFEFCDF00F7E01FE0H"<";&>"J&F#8"
+01FEFE00FFFE0103D0FFE1FFF01F00FE0G"=#=">"D#8$9#;":#G"<"8#
+FCFC01FCF8F803F9FE00FC013FF807C7E1F01FH"B#8"=#C)8$9#<%F#<"
+03FC0103F007C0007FFF81F8003FE00000E01FFC3FFF00F8070FJ#=#J)8"<":%8"I"9"
+9F803F807600003FF801F0001FC00FFC03F87F7FC307G";#<#@#B"8'8#;"?#B"9"<"
+F8F03FF803E00FFC1FC001E0000F01C003800FCF0301H"9&:&>"B$9(:$9%8#A"8"9"8$
+07F000007007F007FFF00F1FF07FE081E007FFF83FFCF0000FFE01F0FF003F8FFC87F8000FG":"8#:"8">"D-<#8$8%C#8":#
+F080000FE0E0C0FFF00FFF010FF803FFF07FFF001FFF00E1C000007FFE0107000FH"8#?"8">"D"8$8%9"8"@">$<"8"8"
+0FFE000F1F3FF8003FFEE0FFFF80F8030F00000F0FFC01G"9":":%>"C$8'8"9"8"9#8"8"C%9"8#
+E0F81FC01FFFC080F1FFFC807FFE01FFC1C0FC008043F003FF00FFFEFF003FJ"C"J"9"8"<"9"9"8"8"G"9"8"
+5F03F807FF81FF3F03F8001F801FH"8":":&=#B$9"9"8":"8"8#8"9"C$:"8"
+1FC00F803FFF807F007FF3FFFEFF83E0C00FC007FF7F807FFCE007G"9":":"J"=$8":";":"8"=#="9"8"
+C08003009FF81FF03C0F8E0E03FFFFF3FF803H"8';$=$G"B%9"9"8"?":";%
+3F00007FF800017FFF00FE00FF81FFC000070FFF1F8F3FFFE00001J(9$8"J"?$8";"A"9%:#
+4FC0007FFFF0000FE00FFFF>FEFF0003F0FCCFC03FF87FFF80G"8$8$8"8">#J"?$D"="
+80F8001FE0007FFCFEFC01AE0FF800F1FF0H&8$8#A"E"="8"<"@"D$<#
+7FFFF0007FF8003FF801038007E0F0C0E01FF0FC00G"9#8$9%="E#G"@"@":$;"
+0001FFFE000F03FFFC01F8F000FCE0C70FF0FFFEH%9$8"B"D#@"<#?"D$<"
+FFFFE003FF0007F007800EC0FE01F0F00FE1FFJ#:"9#8"="D$<"J"@"
+4C00780E00703F0FE007EFC5F8FFF"9#:#9$J$<"J$="
+FE800FE0030FFFF87F807FEFEDF807C180G"9":#8"8#=#C#=#?#J#
+011FF001C0F007E00FF01FFC03FF03903C3F"9#:#8#J#="9"G"D$
+FC003FF800801F9E03FFEE0FCFC0383J":'8"=#D"A"J"
+57FFC007FFF003F0FC01F7FC0B87G&:":$J"B"9"@"G#8$
+03FFFE00FFFE7FFFE07C0E0E39FFE01F01FF9F"9";%:"=#D"A"G#@":$;"
+F801FF003FFE1F803FFFC0F81F1F8FFFE081G"?(J"?"@"J(
+07801FFC00FFFFC078001078FF000FFFF01FF8I#<%A#J"J$
+FC03C01FF801007FAFE;1FFFE0F#@$8#>"J#8"="<"9"@"9"8";"
+F00F0FF003803FFF6FF00800F8F3F3F80F083J"<%9"<"G">";"8"@#E$;"
+407E00FE0077FFEFC7FE1FCF07F3FFFE003F"8"=%8"J"@"="?"@"B#
+E0F8F00FC00F009F8001FE0FEFE07G"@#:"<#E#=%9"8#<"8#D#:"8"
+1F0780FFFC017FF0803FFE20E0F83F87C0FFC07F7F0FF"9"<'J"8":%:%<"8"="B"8#
+C00FF807001FFFFE:C280C00FFC607FFFF07F838100F0F81FJ$@#D$>#;%<"8"@"8$9'
+<02003FF803C01F8607F03FFFC0FF8003F87FFFE00FF01FFFF03FG"?%8"J#8"8(9$9#9$8-:"8%
+3FFC00007F018001E0080FFE00001E03F0FFF01E0073FFC07F8007FFFFE000000003FE03FC007FFC07FF"8"@$>#D(8'9$8*8&:/
+80F0FFFFFCF007E0003E0020000707F00003E001000007F800001FFF0000001F000001FFC0380001FFF0FFF8000010003801FFG"A"9"J&9%<"="8$J#
+7F010397E00000003F80007C00F807FFFFE40007F"9"<$8"?"D&;%9"8"='C":"8"
+001FFE0003F80FF801FE0020FE000FE0FC7FE00001FFFFFFF91E1FJ"9"="E#T%8%8Q#9W9(
+=0707E0FE07F03FFFFFFFC007FF003FFFFFFFFFC000FFG"A"8"?"D#?#;#?#F";#
+FF0FF01FFFFFFFFFFFFFFFFFFFFFFFE"C"9"="
+FE1F0FC0F"9"<$8"?"
+010FFF003FE03FE"C"A"
+FC7F80J#8#>"
+<01FFC01F7FF"8"J"
+03F8500E#A"9#<$
+F80787803FFE00FFE":"="
+F0078FJ"9#<#
+<9F007FFC01F"A"
+0FFFE"9"C"<#
+E0FCFFF803F"9"@"
+1F03FEE"F"=#
+C001F007I#@"
+FE01FCE#E"=#
+803F03E00FJ"@"
+400F8E#8"J#
+007FFF4C01FJ"@"
+57F07F"D">#
+FFF0803FJ#@"
+4803F0FD#;"?">#
+FE011FE0007FJ#@"
+4C00F1FD#E"?"
+FC03C0FFJ#G"
+4E007FED#:#@"="
+F807F0033F01J"?"="
+50180FCD#:#>$="
+F00FF800FE007F03J$=">"J#J$
+4FC007FF8F89FE01KF8007FD#:$=$="J*959$8$
+E01FFE001FF000FF078800001FFE7FFF887FB9E1FF840FFFE00003C0120000003C00000007FFFC0AFF000F3F0FFC3F800001D";$=">"?)9/9+=)9#8&
+C0FC000FC0F0E0000000001C000F00003FFFFC0000001FC000008001E000040000000001C000007FFC000000001F0000FC0000001FE":$="?"J"9":"@"@";"="9"
+3FF80007000F7F00300033F0FE003D"="<$="?":$908%:":-9)
+8001FC0001E0F81F8007F003FFFF803FFF8007FF001FFC007FFF80FFF0FF3FF0007C000FFFF801FFE007F80FFFFF803FFFC0E":$<"@">%8#9#8%8&9'8+8%9)
+7FF00000F81FFF800FFCF003FC0F00FFFFF0807FFF003FC1FFF807FFFE807FFFE03FF807FFC00703FFF003FC1FFFFE01FFFFF8D";"8";$="A$8"9&8"@":#:#9%@#8#
+00E03FC00003C07FFFF801FE1FFFFC03FEC3FFC3FC7FF003FFFCFC07FE07E";$:#@"?"8%<#8"<"D":#8"8"9"8#8#
+FF080007FE003FC0FE3FF800F80FFF1FFEFC010701FEF00FFF87C"<%:"8"="J#9";"I"<":%
+FEC01C0000F807807F01F870FFE003FFFE01FC"<#8"9"A"F";#?"J";#9"
+FC801F1F807F7FE03F07;7FC03FC7D"<%8&="G";#9";"?"?"=";#
+013F800001F80000100F003FC07FCF03C7FF3F807F:$<#;)8"?"F";#>#J";#;#
+FE0001F803003FE0000007B80060FF1F80FF0801400801F00FF:%C#8#9"="G"<"G";$8"E":"
+F800007F7FF00000E0FEC0010FFFFFFC0F01CF:"8";#:%<$J#:"@#?"8'>#:#
+C007F007FE00FFFC03E01F8600FFE0C00FF7FFFFFFFF807C00FFE039#8";";"8"<#=#C&;"?$;"I#:"
+FE0001E0FCFF1FC0FC01FFFFF87007030E007F07E007FC9"9#;";"8";$J":";":"J";#;":"
+F8007F0F01F07FC03F903FCFF0F501F00307FF9":":#:#8":$=#F#;"@#J#:"
+F01FC01FF803FE03FF80F803780107803F9F801F89":":";#8#9"8"J#:"B"J"
+E00780F007FF803F7F87C00F81F9FC9':#:#9(=#F$:"@#=#:":#;$9#
+80003FE00001003FE00FFF80003FFFFF00F0077E007F0FE00FFC7FC7FE03FE007FF00F9';":";$9"="C"8$9"A#J$
+0001FFFF00007FC0FFFFFFFF0FE77F003FF0F0079FF003F8$8$8"="G"J";":%
+FE0007C0007FFE1FE0J0FFF0FFFFC078$8$8$:#J#E#A"<#<#9"
+FC003FF0003FFC00FF803FD801FF8037FF80F801FE08$8$9";"?#=#G#9"A#F%<#:"
+F0007FFC001F0100FE01C01FC00FE0FC0107FFF01FC00F1F9#8$8";$H"C"9#:"@#>"=%<#
+01FFFF0007F8FE007F3FC7E0071FFE00FF0FFFE03FE0078#:"9#<">#="H#E$<";":#<"
+E00380F003FFFC0380F003FF007FF88F807FF08#:#8#:"J"C"9"J$9$9$="
+C007E003E007FC47F87F8700000000000F4001FF038#:#8#:#?#="B$:"F#E$=#
+800FF001C00FF801F8070000000701803F0E0007F8019":#>#G$G#G"E$=#
+1FF800F003FE00FFFC001F0F007FFC008#:"9#J$E#B":"="
+003FFC801FKFE007FC00F073FFE9":':#?#<#H$E#:$9$8$=$
+7FFE007FFF003FE007F00FFC01FF003FE00707FFF07FFF8707C01FFF007F9":"8"<#J$:":"A";$9$8$?"
+FFFFFEC00F?7FFFC7800FF00FFFF8FFFFCF0FC00F3F7"=&E#="J"F"<"9";"?#9"
+FE803FFC007FE01F0341F03FC7FE0801F0F8"<#8":#G"J#E#@$9#>#
+01C01FFF801FF84C00FF801FFFFC7F007C00F7"?#;#G#D":#E#:"8"8";#>#<$
+FCF801003FF007E7E007FC00077F7FF803E007F83FF08"<%:$?#J#<$<$9"B">">$
+03E00FF003FE007FC03F;F003F80000FE007F0F01F000007F?$;"I#G";"B"G"@"8"
+F00FE0FCE00FFFF0FFFC03F07#=$:$?#J#9"8$>";#8$9#>#9"8%
+F80707C007F800FF807F;F80107FFC0033FFFFFFFFFFFFE00F80107FFF803FF?%;"H#D":#=#=#G"=$<"
+F807800F01C01FFFFC00F807801F7FFC00FCFCA#:#J">">#E"?$
+001FF003GFEFCC00FFFFE007E?%:#@#<#I'B"G#A#
+FC02003FE00700FF803FFF007E1FF803E0803FF8038"=$:#J"F"F#=$
+0F00007FC00FI3E07C01FFF003E7"@":"@">#J"8#B#J"8#
+F0FF80FE007F480FC01F003:80FC01?$;#@"J":#E#<";"9#>#
+FE0001001F018CFC01EF801F19FE00FC01EA"<"G$E":&B#B"9#>&
+033FFE00FF8FE00E1FFE00FC001FF007E00E3FFE00A":$?"J#9"A"G#>#9"
+07FE007FFC>F0067FFEF803F0067F?$:"B"<#J"E"A"D&
+FF000FFC03FC018FF433F023FFF003FA":$?"=#J#8#A$E#>#8#
+1FF800FFF8F8035F802803FFF0003FC01F800801FA":#A"J":#8#B"<"?#>"9#
+3FF0010781FFC00C00F80E1FE00FCC00FA":#H"J"9#B"<":"<"="9#
+7FE003F06FEE007C0E3FE7FFEE0077"?":#@">"H"<#B"D$8"<"9#
+F8FFC007F0077FF003E007FFFFF8FFF0018"=";#A"<#B"8$9"9#B"8"9$8$9'=&
+0703800F0FE00F80FE1FF0FFF800F0F083FF00F83FF0803FF803FFE0FC007FFFF8@";#@"J"<"8&:#=-9'9"8&
+07001FE08F880FC003FFFF0FE0700000003FE000000003FE0030FF001FFC07F80FE000FFFE0@":$H#B(<-8%:":'`"<'
+0FFE003FC01F000000001FC01FFF0003FF8007E0000180001FF803FE00C03800000FFFC001FF800070000F@":$A"I":$9"9);"G"?"9&
+9FFC007F1FF01C0000C0C00000007FC00000FCE0C0F0000000FF@"<"@"=#A"@#8"8#@"J"9"8"
+BFFFC0803FE0E03FF001FFFC9E0FC077#=":#B"J"8$9#8"8"R8#Z9"9%
+FC03FFF0013F520BC3FF1F01FFE3FFF837FCFFC000FFE#A"=#AS9#8%@"J#9#
+E00380007FFF9FFFFC0FFFFF:FFFFFFFF8"B#B";$J"9#
+0180077FFE00FF7FFFFFF7"C#
+FE000FF"A#;#
+1F00FFFC018"A$I"
+00FE003F037$@$@"="
+FF007FF8007FFEF8F"A"<#
+FF01F0078#@#
+803FE001D#A"=#
+C003FCE00F8#@#B"
+C01F000F039"?$I#
+0FFE001FC01F8"@$A"
+E0FC003FF89"?$B"<#
+07F0007F07803F8#?$A"="
+F003E000FFF0008#?#C"="
+F801C0010F7F8#?#J"
+FC0000035FF:"=$B"<"
+7FFE0007E0FE8$=$C"<"
+FE003FF8001F1F018$=$B"<"
+FF001FE0003FC0FC9#=$C";#
+80078000FF3FF8039#<$J"
+C003FE00015079#<$C"<"
+E000F8000780F09$;$D";#
+F0003FE0000F7FE00F9$;$
+F8001F80001F9$:%C"<#
+FC0003FC00007F00C01F9%9%D"<"
+FF00007FE00001FFFF3F:$8%C"="
+800007FE000007FE80:'8"D"<#
+E000001FFFC01F01007F:"8$8"C"
+F00000007FFC:"<#D";$
+FC01FF03FE00FF:"<"
+FF0F;";"D"<#
+C03FF8FC01;":#E";"
+F801FF07F8;":"E"="
+FF0FF003<"9"F";#
+F0FF0FF007<%F"<"
+FFF0007FE0E0=$J"
+FFFFFF80FJ";"
+;1FC0J"="
+:C01FJ";#
+;3F803F
+J#:$
+:807FFE007FJ"="
+:00FFJ":"J"
+;FFFCO#87J"J#<%:#85
+A01?F81F87FFF87FFE07<801FE3F1FE3E1C1C0007800001C00000E001E000007C003FFF800007J"<#F58":"8*="A"
+9FEF80389F1C7E38B8FF803800001F00001FFFC003F000F000000C07FFFCFE0007C001FE001C000101J";"@->'9%;5
+:01F00007F801C03FFF801C00380007FF8781FE031E03FFF0AF8E7FFFC7F87FC1FFFC1FFC1FF0FF83FC1FC1FE1FE0FFE1FF07FC3FFFFF07FC03FJ"="?5;'9"9"8"8$8#;#
+9FC07AE07FFF0FFC1FFFF1FFC1FF07FFF1FF87FE3FF0FF03FF1FE1FF07F3F83F9F81FFF1F9FFFFF87FC7E1CFF9F9FE1FFEFFFC1FJ";"@"8(<"9'8&;"9#@"="<#
+:03E0F09FFC0FFFF9FFC3FF83FE3FF1FF0F7F9FC1FFE3F1FFE7FBFCFE0FJ"<#@"9";$<%:&>"J"<#
+9F8C00FFF0787FFF3C1FC7FF93FDFE0FFE7F14FEFF07J"<"D";$E%;"J"
+:071F0383FFE39FF0FFC7E1?83J"<#D";"?"=%>$="8"8":"
+9F0803F83C3F8FFF87F8FE1FFFFFFFFFFFFJ";"E";$9"8"8"8":#J"
+:0F00C1C1FFE7FFE1FFFF3F9FEC3J"="D"="<"?"J"
+9E07FE0C7C1FCGC1J":$E":$<"@#8#:"?"8"8":"
+:1FFE00FF7FE1FFCFC31F3FFC03E03FE7F7F3J";"F#:":";"=$8)
+9C0FCF03FE0FE3FFE1E7FF000FFC00FFFF07FJ";"E";$<$>"9%9$J"
+:3F01F8F0FF8F87FC1F0EE1F07F801FFFFE9E1J";#E#<"8"8&<$859#:"
+980F803FC1F9FFCFE1FFC003FFF0CFF7C7FC3FE1FFFFF8003FFE000001FFC0007FF8000FFE00070003F8J":"F#<%8(;"9";$A"
+:7FF0FE0F1FFF8000C03FFE0007FF078487FC000FFCJ"<"A"9#:$;&="9$9(;"8":#
+900077FFF07F87F3FC1FFFF8001818FFE1FFF0003FC1FFFE1021D0FC3J":"B":">#8"8#="9"<"<#8&9#
+:FFE0FF0383F8E0E000C10FF8E1FF3FEFFC1FF71FF3J"A":":#8#9$C";$:$8"E"
+@0F7F81FC3E87FE7FFFFFFFFF01FEC1FF3FE7C1J#;#A":"<";"9#B";#:"J"
+8FE01C01FFFC17FF0E07F0FC1FCE14C3J"<"G":"=#8"="A#:$8"8":"
+8FC80E0FEF83FF0E1E1FEC1FF7FFFFFFFJ";#F#:#8"8#8$J"H"
+903003FF0791CFFFFFC1FF87F0F9FF83J"="J";"<"J"8"
+8F87FIC11FFC6F087J":"H#9#<#J"8"<"A"8#8"
+907FEF839FF18FE0F4F7FEF73FF3F807J";$A":#:":&8#?";$I"8"9"
+8F0FC00FF7FFC1909DFF0FF07FDFF0707F3FFE37FF70FE$<#;"A"8"8#:"=#?"9$C#8"@"8#
+FC000FE00F01F81FFE090183FCE187FF3FE7FCFEE7FE1FE$=":"E"8#:":"8"8"A#<";"8"?"<#
+C000001FF83FFF01839F81F183FEC7E1F8FEF83FE"8";";#B#G"@"9$9%:";"9"=%
+001FC0F0033FFEC0C1C3FE7FF1FF8FFCC1FC0FF07FE07FD"9"<";"A%9$@%A#:5
+F8073F07FC1FFC7F81FFC1E0FC7FC3E1FC>F07E1FFC0FFFC0FF800007F01FFFF80FFFFC0FFC00007F800007E00001FFD"9";";"C*8"838&8)8*9"8$
+E00080E003E0FFFC7FFFC1FF81C700001FC03FF03C0F0FF800FFC003FFFE003FF011FE003F007FE001FE001E00C003FFC001FFE001F000C0000FD":":#:#A'8$9"9+9"9%8#Z
+C07F007FC00FFE0001FFC00FFC003FFC000FF01C001FF0007F8032F803FF3FFC01;D":";":#A.T"U8S
+001FFF801FFFC007FFFFFFFFF1FFFFFFFFCFC3C";"9"="B#:":"?"
+FE07FE3FFFFFFFFFFFC(9"<"
+FC0003FFF00003FC00C(9#<"
+F8003FFFFF0001F8017FC$8#:":$
+F000FFC00003FE00FFC#9$8";"
+E001F0007FF0FCC#9$8#:#
+8007FE003FE007F801D"9$8#;"
+0FFF001FC00F03C#:#8#:#
+003FC00F801FF007B$:#9":#
+FE007FE0073FE00FD":#8";"
+FFF00300C0B"<':#
+FCF801FFFE007F801FC";';"
+01FC00FFFC00FF3FB#;"8#;#
+F803FEF801007FI%;$
+FF007FF0FE00FFB#>#:"
+F007E003FCJ$
+53FE007C"<%:#
+0F803FC00FF801B"=%:#
+E0C01F001FF003C"<%:#
+1FE01E003FE007J$:#
+50E007FC00FJ%:"
+4F00C00FF80J#<"
+500011FC">";#
+3F03003FB"="<$
+C0F8FE007FJ":$
+60FFC00FFB"?":#
+E01FF801B"="<"
+C0FCF0J":#
+67FE003J":#
+6FFC007J";#
+501800FB">";#
+E003001FC"<#:$
+1FFE07FE003FJ":$
+50FFC007FJ":$
+51FF800FFJ";"
+57F01C"=":#
+0FFFF003B"=";#
+F0FFC007J#
+:800FC"B"
+0700B"B$
+F8FE001FJ$
+9FC003FC"A$
+03F800FFB#A#
+FC01F001J#
+9E003B#A#
+FE008007D"@#
+7F001FB"A$
+FFFC003FC#?$
+803FF8007FD"?$
+1FF000FFC#?#
+C00FC001C#?#
+E0078007D">$
+03FE000FC#>$
+F001FC001FC#>$
+F800F0003FC$=$
+FC007FE000FFC$=#
+FE003F8001C$<$
+FF000FFE0003E"<$
+07F80007D#<$
+C003E0001FD$;$
+E0007F00007FD$:%
+F0001FF80001FFD$:$
+F80003E00003D%8%
+FE00003FFE00000FD"8"8"8"
+FF03C03FE"`8"
+80FFE"<"
+E003E"<"
+FC1FE"<"
+FF7FF":#
+E003FFF":"
+FC1FF#8#
+FF8001FFG"8"
+FE7FG%
+FFFFFFFF
+
+
+
+
+
+
+
+
+
+
+
+ENDBITMAP
+%%EndBinary
+354.2 96.95 531.65 255.98 C
+63.65 96.95 531.65 744.95 C
+72.65 96.95 234.65 162.95 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(V) 72.65 154.95 T
+(ersion 1.2) 79.98 154.95 T
+0 24 Q
+(User) 72.65 112.95 T
+(\325) 118.82 112.95 T
+(s Guide) 125.49 112.95 T
+63.65 551.95 441.65 740.95 R
+7 X
+V
+0 40 Q
+0 X
+(Genetic Algorithm) 99.65 714.29 T
+63.65 626.03 441.65 636.03 C
+63.65 635.03 531.65 635.03 2 L
+1 H
+2 Z
+0 X
+0 K
+N
+63.65 96.95 531.65 744.95 C
+0 70 Q
+0 X
+0 K
+(T) 99.65 651.22 T
+(OOLBOX) 141.15 651.22 T
+0 20 Q
+(For Use with M) 248.68 613.03 T
+0 17 Q
+(A) 375.83 613.03 T
+(TLAB) 386.21 613.03 T
+1 14 Q
+(\322) 430.59 619.83 T
+-8.35 24.95 603.65 816.95 C
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+595.3 841.9 0 FMBEGINPAGE
+2 10 Q
+0 X
+0 K
+(Genetic Algorithm Toolbox User\325s Guide) 63.65 61.61 T
+3 28 Q
+(Acknowledgements) 63.65 726.29 T
+0 12 Q
+2.62 (The production of this T) 135.65 692.95 P
+2.62 (oolbox was made possible by a UK SERC grant on) 262.55 692.95 P
+-0.01 (\322Genetic Algorithms in Control Systems Engineering\323 \050GR/J17920\051. Many thanks) 135.65 678.95 P
+0.65 (are due to Hartmut Pohlheim, a visiting researcher from the T) 135.65 664.95 P
+0.65 (echnical University) 437.4 664.95 P
+0.25 (Ilmenau, Germany) 135.65 650.95 P
+0.25 (, for the support for real-valued genetic algorithms and his hard) 225.04 650.95 P
+0.2 (work in coding and revising many of the routines in this T) 135.65 636.95 P
+0.2 (oolbox. Thanks are also) 416.47 636.95 P
+(due to Carlos Fonseca for providing the initial prototype for this T) 135.65 622.95 T
+(oolbox.) 452.95 622.95 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+595.3 841.9 0 FMBEGINPAGE
+2 10 Q
+0 X
+0 K
+(Genetic Algorithm Toolbox User\325s Guide) 63.65 61.61 T
+3 28 Q
+(T) 63.65 726.29 T
+(able of Contents) 79.75 726.29 T
+(1 T) 63.65 686.29 T
+(utorial) 100.75 686.29 T
+0 12 Q
+(.....................................................................................................) 183.54 686.29 T
+(1-1) 486.65 686.29 T
+(Installation) 135.65 656.95 T
+(..................................................................................................) 192.54 656.95 T
+(1-2) 486.65 656.95 T
+(An Overview of Genetic Algorithms) 135.65 636.95 T
+(.........................................................) 315.47 636.95 T
+(1-3) 486.65 636.95 T
+(What are Genetic Algorithms) 171.65 620.95 T
+(.........................................................) 315.47 620.95 T
+(1-3) 486.65 620.95 T
+(GAs versus T) 171.65 604.95 T
+(raditional Methods) 237.18 604.95 T
+(....................................................) 330.46 604.95 T
+(1-5) 486.65 604.95 T
+(Major Elements of the Genetic Algorithm) 135.65 584.95 T
+(................................................) 342.45 584.95 T
+(1-6) 486.65 584.95 T
+(Population Representation and Initialisation) 171.65 568.95 T
+(..................................) 384.43 568.95 T
+(1-6) 486.65 568.95 T
+(The Objective and Fitness Functions) 171.65 552.95 T
+(..............................................) 348.45 552.95 T
+(1-8) 486.65 552.95 T
+(Selection) 171.65 536.95 T
+(.........................................................................................) 219.52 536.95 T
+(1-9) 486.65 536.95 T
+(Roulette Wheel Selection Methods) 207.65 520.95 T
+(....................................) 378.43 520.95 T
+(1-10) 486.65 520.95 T
+(Stochastic Universal Sampling) 207.65 504.95 T
+(..........................................) 360.45 504.95 T
+(1-12) 486.65 504.95 T
+(Crossover) 171.65 488.95 T
+(........................................................................................) 222.52 488.95 T
+(1-12) 486.65 488.95 T
+(Multi-point Crossover) 207.65 472.95 T
+(.........................................................) 315.47 472.95 T
+(1-12) 486.65 472.95 T
+(Uniform Crossover) 207.65 456.95 T
+(............................................................) 306.48 456.95 T
+(1-13) 486.65 456.95 T
+(Other Crossover Operators) 207.65 440.95 T
+(.................................................) 339.46 440.95 T
+(1-14) 486.65 440.95 T
+(Intermediate Recombination) 207.65 424.95 T
+(...............................................) 345.45 424.95 T
+(1-14) 486.65 424.95 T
+(Line Recombination) 207.65 408.95 T
+(...........................................................) 309.47 408.95 T
+(1-15) 486.65 408.95 T
+(Discussion) 207.65 392.95 T
+(..........................................................................) 264.5 392.95 T
+(1-15) 486.65 392.95 T
+(Mutation) 171.65 376.95 T
+(.........................................................................................) 219.52 376.95 T
+(1-16) 486.65 376.95 T
+(Reinsertion) 171.65 360.95 T
+(......................................................................................) 228.52 360.95 T
+(1-18) 486.65 360.95 T
+(T) 171.65 344.95 T
+(ermination of the GA) 178.14 344.95 T
+(...................................................................) 285.49 344.95 T
+(1-18) 486.65 344.95 T
+(Data Structures) 135.65 324.95 T
+(...........................................................................................) 213.53 324.95 T
+(1-20) 486.65 324.95 T
+(Chromosomes) 171.65 308.95 T
+(.................................................................................) 243.51 308.95 T
+(1-20) 486.65 308.95 T
+(Phenotypes) 171.65 292.95 T
+(.....................................................................................) 231.52 292.95 T
+(1-20) 486.65 292.95 T
+(Objective Function V) 171.65 276.95 T
+(alues) 274.25 276.95 T
+(.............................................................) 303.48 276.95 T
+(1-21) 486.65 276.95 T
+(Fitness V) 171.65 260.95 T
+(alues) 215.96 260.95 T
+(.................................................................................) 243.51 260.95 T
+(1-22) 486.65 260.95 T
+(Support for Multiple Populations) 135.65 240.95 T
+(..............................................................) 300.48 240.95 T
+(1-23) 486.65 240.95 T
+(Examples) 135.65 220.95 T
+(....................................................................................................) 186.54 220.95 T
+(1-26) 486.65 220.95 T
+(The Simple GA) 171.65 204.95 T
+(..............................................................................) 252.51 204.95 T
+(1-26) 486.65 204.95 T
+(A Multi-population GA) 171.65 188.95 T
+(..................................................................) 288.48 188.95 T
+(1-30) 486.65 188.95 T
+(Demonstration Scripts) 171.65 172.95 T
+(.....................................................................) 279.49 172.95 T
+(1-36) 486.65 172.95 T
+(References) 135.65 152.95 T
+(...................................................................................................) 189.54 152.95 T
+(1-37) 486.65 152.95 T
+3 28 Q
+(2 Refer) 63.65 122.29 T
+(ence) 150.98 122.29 T
+0 12 Q
+(..............................................................................................) 204.53 122.29 T
+(2-1) 486.65 122.29 T
+FMENDPAGE
+%%EndPage: "3" 4
+%%Trailer
+%%BoundingBox: 0 0 595.3 841.9
+%%Pages: 3 1
+%%DocumentFonts: Times-Roman
+%%+ Symbol
+%%+ Times-Italic
+%%+ Times-Bold
