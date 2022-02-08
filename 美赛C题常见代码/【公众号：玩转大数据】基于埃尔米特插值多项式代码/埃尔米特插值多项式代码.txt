@@ -1,0 +1,21 @@
+%埃尔米特插值多项式
+%x0为点横坐标
+%y0为函数值
+%y1为导数值
+%m个插值点用数组x输入
+n=length(x0);m=length(x);
+for k=1:m
+yy=0.0;
+for i=1:n
+h=1.0;
+a=0.0;
+for j=1:n
+if j~=i
+h=h*((x(k)-x0(j))/(x0(i)-x0(j)))^2;
+a=1/(x0(i)-x0(j))+a;
+end
+end
+yy=yy+h*((x0(i)-x(k))*(2*a*y0(i)-y1(i))+y0(i));
+end
+y(k)=yy;
+end
