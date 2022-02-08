@@ -1,0 +1,35 @@
+clear;
+clc;
+F=input('输入优先关系矩阵F');
+X0=input('输入参考向量X0:');
+D=input('输入原始属性矩阵D:');
+%%模糊层次分析法计算指标权重
+N=size(F);
+r=sum(F');
+for i=1:N(1)
+  for j=1:N(2)
+    R(i,j) = (r(i)-r(j))/(2*N(1))+0.5;
+  end
+end
+a=input('参数a=?');
+W=sum(R')/(N(1)*a)-1/(2*a)+1/N(1);
+%%计算灰色关联系数---------------
+K=size(D);
+m=max (D');
+n=min(D');
+X0= (X0-min(X0))/(max(X0)-min(X0));
+for i=1:K(1);
+  for j=1:K(2);
+   X(i,j)=(D(i,j)-n(i))/(m(i)-n(i));
+    x(i,j)=abs(X0(j)-X(i,j));
+ end
+end
+A=max(max(x));
+B=min(min(x));
+for i=1:K(1)
+   for j=1:K(2);
+     S(i,j)=(B+0.5*A)/(x(i,j)+0.5*A);
+   end
+end
+%%计算加权关联度——
+G=W*S';
