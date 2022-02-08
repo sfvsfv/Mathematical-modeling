@@ -2,6 +2,8 @@
 全网最全美赛代码模型论文资料
 
 数学建模交流群：
+
+
 ![285412890](https://user-images.githubusercontent.com/62045791/152969456-1dd64854-823b-4343-8f00-e5d9f8a15548.png)
 
 个人数学建模专栏：https://blog.csdn.net/weixin_46211269/category_11242184.html
@@ -20,4 +22,3 @@ CSDN：https://blog.csdn.net/weixin_46211269?type=blog
 公众号：玩转大数据
 知乎：https://www.zhihu.com/people/wei-da-de-bu-ping-fan-93
 个人微信：hxgsrubxjogxeeag
-个人QQ:2835809579
