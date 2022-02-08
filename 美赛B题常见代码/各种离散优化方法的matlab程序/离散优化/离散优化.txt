@@ -1,0 +1,13 @@
+% 离散优化
+% *enum - 枚举法
+% *monte - 蒙特卡洛法
+% *lpint (BranchBound)- 线性整数规划
+% *L01p_e - 0-1整数规划枚举法
+% *L01p_ie - 0-1整数规划隐枚举法
+% *bnb18 - 非线性整数规划(在MATLAB5.3使用)
+% *bnbgui - 非线性整数规划图形工具(在MATLAB5.3使用)
+% *mintreek - 最小生成树kruskal算法
+% *minroute - 最短路dijkstra算法
+% *krusk - 最小生成树kruskal算法mex程序
+% *dijkstra - 最短路dijkstra算法mex程序
+% *dynprog - 动态规划
