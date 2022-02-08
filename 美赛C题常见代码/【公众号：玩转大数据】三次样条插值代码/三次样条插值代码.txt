@@ -1,0 +1,4 @@
+x = [0 2 4 5 8 12 12.8 17.2 19.9 20]; y = exp(x).*sin(x);
+xx = 0:.25:20;
+yy = spline(x,y,xx);
+plot(x,y,'o',xx,yy)
