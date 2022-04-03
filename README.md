@@ -1,9 +1,20 @@
 # meisai
-数学建模我建议看书，没有必要看视频，已上传我一直在研究的书的资料同时配有代码，便于学习理解，欢迎一起学习交流。与此同时，我还上传了我所积累的一些很常用的一些matlab代码，如果你有一定的基础，你一定能看懂。有些资料太大，无法上传，部分大文件已压缩上传。
 
-如果你真的想学技术，建议你要拥有梯子，梯子能帮你技术突飞猛进。
+## 资料说明
+1. python数学建模  链接：https://pan.baidu.com/s/1Ow2CHzA6R9BG7rlDkY975A?pwd=dw20  提取码：dw20 
+2. 图论： [点击](https://github.com/sfvsfv/meisai/tree/main/%E5%9B%BE%E8%AE%BA%E7%AE%97%E6%B3%95%E5%8F%8A%E5%85%B6MATLAB%E5%AE%9E%E7%8E%B0)
+3. 吴恩达机器学习 链接：https://pan.baidu.com/s/1HOVm3FeslzybMa5u0oXY3w?pwd=oytw  提取码：oytw 
+4. 语音：[点击](https://github.com/sfvsfv/meisai/tree/main/%E6%95%B0%E5%AD%97%E8%AF%AD%E9%9F%B3%E5%A4%84%E7%90%86%E5%8F%8AMATLAB%E4%BB%BF%E7%9C%9F)
+5. 最优化算法:[点击](https://github.com/sfvsfv/meisai/tree/main/%E6%9C%80%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95)
+6. 常用python算法：[点击](https://github.com/sfvsfv/meisai/tree/main/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A130%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95(Python%E4%BB%A3%E7%A0%81)
+7. 司空奎数学建模与应用:[点击](https://github.com/sfvsfv/meisai/tree/main/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8)
+8. 金卓武数学建模：[点击](https://github.com/sfvsfv/meisai/tree/main/%E5%8D%93%E9%87%91%E6%AD%A6%E3%80%8AMATLAB%E5%9C%A8%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%20%E7%AC%AC2%E7%89%88)
+
+具体可以直接看文件夹名字，名如其名。
 
 
+
+## 交流与社交
 
 数学建模交流群,更多资料可以群里下载： 912166339
 
