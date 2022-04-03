@@ -11,6 +11,7 @@
 8. 金卓武数学建模：[点击](https://github.com/sfvsfv/meisai/tree/main/%E5%8D%93%E9%87%91%E6%AD%A6%E3%80%8AMATLAB%E5%9C%A8%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%8B%20%E7%AC%AC2%E7%89%88)
 9. 数学建模第五版：链接：https://pan.baidu.com/s/1B13RALO2xIoY9fZeB3htcA?pwd=95s2  提取码：95s2 
 10. 数学建模第四版： 链接：https://pan.baidu.com/s/1cNLGDUEGTYpDKR9ZLMzFlw?pwd=o7x3  提取码：o7x3 
+11. matlab机器视觉：[点我](https://github.com/sfvsfv/Matlab_deep_learning)
 
 
 
